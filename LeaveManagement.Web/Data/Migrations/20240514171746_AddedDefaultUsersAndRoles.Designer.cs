@@ -4,6 +4,7 @@ using LeaveManagement.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeaveManagement.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240514171746_AddedDefaultUsersAndRoles")]
+    partial class AddedDefaultUsersAndRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -106,41 +108,37 @@ namespace LeaveManagement.Web.Data.Migrations
                         {
                             Id = "e206ae07-e677-4aba-92cc-e85d43bb9baf",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "abc13d7e-7159-4105-ae59-d5d16b4373d9",
+                            ConcurrencyStamp = "59b82dba-c226-4056-8859-e11befcedc03",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "lectorcorp@inbox.lv",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             Firstname = "dasdasd",
                             Lastname = "asdasdasd",
                             LockoutEnabled = false,
                             NormalizedEmail = "LECTORCORP@INBOX.LV",
-                            NormalizedUserName = "LECTORCORP@INBOX.LV",
-                            PasswordHash = "AQAAAAEAACcQAAAAEAqsRiuFEGj1Rpkz7lcgI6jnJETG4YqWjWGrW1GbIyr46sY4D1jYH9HabnWkzlukpw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDaA8Gsri2v2gdI4N3e2TA+49Etfd0kbeBwCgQLokEmwd6/P/mVSTbrsWzb39zDkNw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "efd519e7-8012-4210-8f4c-2dcfdc489b4a",
-                            TwoFactorEnabled = false,
-                            UserName = "lectorcorp@inbox.lv"
+                            SecurityStamp = "f6829258-f47e-4d9f-b389-b4cdf5b586ec",
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             Id = "f8070bd8-3380-4b73-ba3e-091549e282b5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9802bde9-f9af-4f28-a193-ec289351008b",
+                            ConcurrencyStamp = "683c061e-e4f7-4947-86dc-0ec4ef017626",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "lectorcorp@her.lv",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             Firstname = "User",
                             Lastname = "User",
                             LockoutEnabled = false,
                             NormalizedEmail = "LECTORCORP@HER.COM",
-                            NormalizedUserName = "LECTORCORP@HER.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEG1BM3VvYUPOMZWUWLOjteIetvM/aADNocanLVAJNLE8SYe0vm1T8xcZ1BKo+3dxtQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELoCW73F9mgwo7wrrPHgjWWGok6rwCoyD6w4gMXRfWEh9ea2GOxLSTszYE/dP0mFeg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6a2904c0-d065-4762-81d0-da2816739947",
-                            TwoFactorEnabled = false,
-                            UserName = "lectorcorp@her.lv"
+                            SecurityStamp = "6c27b9e6-9227-49c3-b9be-5931766746f2",
+                            TwoFactorEnabled = false
                         });
                 });
 
@@ -230,14 +228,14 @@ namespace LeaveManagement.Web.Data.Migrations
                         new
                         {
                             Id = "e206ae07-e677-4aba-92aa-e85d43bb9baf",
-                            ConcurrencyStamp = "efdd5ee1-c0d2-4c52-9286-2a703ff3b560",
+                            ConcurrencyStamp = "b613e3e1-45a3-454a-a91a-f6574fc80b75",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
                             Id = "e206aea7-e677-4aba-92cc-e85d43bb9baf",
-                            ConcurrencyStamp = "fe4e1ae3-3a91-4375-8882-1ca3a64bf9d0",
+                            ConcurrencyStamp = "8b4ddbb8-211b-4266-964c-60b6769484c0",
                             Name = "User",
                             NormalizedName = "USER"
                         });
